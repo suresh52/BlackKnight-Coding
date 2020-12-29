@@ -21,6 +21,5 @@ int main()
     else
     {
         std::cout <<"given string is Not a Palindrome" << std::endl;
-    }
-    
+    }    
 }
