@@ -13,6 +13,6 @@ insert into CUSTOMER values(8, "Ernest Thomas","Canada",500500);
 insert into CUSTOMER values(9, "Joe Garza","UK",18782);
 insert into CUSTOMER values(10, "Anne Harris","USA",158367);
 
-/* retrieving the IDs and the NAMEs of the customers, sorted by CUSTOMER.NAME in descending order.
+/* retrieving the IDs and the NAMEs of the customers, sorted by CUSTOMER.NAME in descending order,
 If two or more customers have the same CUSTOMER.NAME, then sort these by CUSTOMER.ID in ascending order*/
 select ID, NAME from CUSTOMER order by CUSTOMER.NAME desc,CUSTOMER.ID;
