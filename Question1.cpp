@@ -14,7 +14,10 @@ bool is_Palindrome(std::string str)
 }
 int main()
 {
-    if(is_Palindrome("Step on no pets"))
+    std::string str;
+    std::cout << "Enter a String to check palindrome condition" << std::endl;
+    getline(std::cin, str);
+    if(is_Palindrome(str))
     {
         std::cout <<"given string is Palindrome" << std::endl;
     }
