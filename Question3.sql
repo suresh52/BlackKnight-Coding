@@ -15,4 +15,8 @@ insert into students values(6, "Chandra",95);
 ·         Greater > 50 | B
 ·         Greater >= 40 | C
 ·         Less than 40 | Fail */
-select id,name,marks,IF(marks>90,"A+",IF(marks>70,"A",IF(marks>50,"B",IF(marks>=40,"C","FAIL")))) as grade from students;
+select id,name,marks,(case when marks>90 then 'A+' 
+                      when marks>70 then 'A' 
+                      when marks>50 then 'B' 
+                      when marks>=40 then 'C' 
+                      else 'FAIL' end) as grade from students;
